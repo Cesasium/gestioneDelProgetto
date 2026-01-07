@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style1.css">
+    <link rel="icon" type="image/png" href="img/logounito.png">
+    <title>Artemis</title>
+</head>
+<body>
+        <div id="vanta-bg"></div>
+    <div id="vanta-bg"></div>
+
+    <div class="nav">
+        <ul class="menu">
+            <li><a href="index.html"><img src="/img/logounito.png" alt="Logo">Artemis</a></li>
+            <li><a href="pages/paginaProdottoArtemis.html">Prodotto</a></li>
+            <li><a href="#Guida">Guida</a></li>
+            <li><a href="pages/progettoEducazioneCivica.html">Educazione civica</a></li>
+            <li><a href="#" class="Btn-Download">Download</a></li>
+            
+        </ul>
+
+        <h1 class="title">Artemis</h1>
+    </div>
+
+    
+
+
+    <div class="content">
+        
+        
+
+        <section id="welcome">
+            <h2>Benvenuti in Artemis</h2>
+            <p>Artemis la piattaforma unificata che racchiude tutte le applicazioni di Microsoft Office e Adobe in un'unica soluzione integrata. Accedi a word processing, fogli di calcolo, presentazioni, design grafico e modifica di immagini senza dover alternare tra diversi programmi.</p>
+            <h3>Caratteristiche principali:</h3>
+            <ul>
+                <li>Integrazione completa di Office (Word, Excel, PowerPoint)</li>
+                <li>Suite Adobe integrata (Photoshop, Illustrator, InDesign)</li>
+                <li>Interfaccia unificata e intuitiva</li>
+                <li>Sincronizzazione automatica tra le applicazioni</li>
+                <li>Gestione centralizzata dei progetti</li>
+            </ul>
+            <p>Semplifica il tuo flusso di lavoro con Artemis: una sola piattaforma per tutte le tue esigenze creative e produttive!</p>
+            
+            
+        </section>
+
+
+
+
+
+
+
+    </div>
+    <div class="contentGuida">
+
+    
+        <section id="Guida">
+    <h2>Guida all'uso di Artemis</h2>
+    <p>Inizia a utilizzare Artemis seguendo questi semplici passaggi:</p>
+
+    <ol>
+        <li><strong>Registrazione:</strong> Crea un account su Artemis per accedere alla piattaforma.</li>
+        <li><strong>Installazione:</strong> Scarica e installa l'applicazione Artemis sul tuo dispositivo.</li>
+        <li><strong>Accesso:</strong> Effettua il login con le tue credenziali per accedere a tutte le funzionalità.</li>
+        <li><strong>Esplorazione delle applicazioni:</strong> Naviga tra le diverse applicazioni integrate e inizia a creare i tuoi progetti.</li>
+        <li><strong>Salvataggio e sincronizzazione:</strong> Salva i tuoi lavori e sfrutta la sincronizzazione automatica tra le applicazioni.</li>
+    </ol>
+
+    <p>Per ulteriori dettagli, consulta la documentazione completa disponibile nella sezione "Aiuto" dell'applicazione.</p>
+
+    <a href="file/Documentazione_Artemis.docx" download>
+        <button class="btn-documentazione">Scarica documentazione</button>
+    </a>
+</section>
+
+</div>
+
+    <br><br>
+    <div id="footer">
+        <p>&copy; 2025 Artemis. Tutti i diritti riservati.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Termini di Servizio</a></li>
+            <li><a href="#">Social Media</a></li>
+        </ul>
+        
+    </div>
+        <!-- scripts: p5 first, poi Vanta, inizializzazione dopo DOMContentLoaded -->
+        <script src="assets/p5.min.js"></script>
+        <script src="assets/vanta.trunk.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof VANTA !== 'undefined' && typeof VANTA.TRUNK === 'function') {
+                VANTA.TRUNK({
+                    el: '#vanta-bg',
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 300.00,
+                    minWidth:500.00,
+                    scale: 3.00,
+                    scaleMobile: 2.00,
+                    backgroundColor: 0x000000,
+                    chaos: 3.50
+                });
+            }
+        });
+        </script>
+</body>
+
+</html>

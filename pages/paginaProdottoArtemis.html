@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/logounito.png">
+    <link rel="stylesheet" href="../style/style1.css">
+    <title>Artemis work/Design</title>
+</head>
+<body>
+          <div id="vanta-bg"></div>
+    <div id="vanta-bg"></div>
+
+    <div class="nav">
+        <ul class="menu">
+            <li><a href="../index.html"><img src="../img/logounito.png" alt="Logo">Artemis</a></li>
+            <li><a href="#welcome">Prodotto</a></li>
+            <li><a href="../index.html">Guida</a></li>
+            <li><a href="../pages/progettoEducazioneCivica.html">Educazione civica</a></li>
+            <li><a href="#" class="Btn-Download">Download</a></li>
+            
+        </ul>
+
+        <h1 class="title">Artemis</h1>
+    </div>
+
+    <div class="content">
+        
+        <section id="welcome">
+            <img src="../img/artemisWork.png" alt="Artemis Work con Microsoft Office" class="product-image" style="max-width: 200px;">
+                <div class="product-section">
+                    <h2>Artemis Work</h2>
+                    <p>Artemis integra le potenti funzionalità di Microsoft Office per offrirti un'esperienza completa di gestione progettuale. Tieni presente che, sebbene le applicazioni siano disponibili, l'utilizzo della tecnologia IA non è gratuito e potrebbe comportare costi aggiuntivi.</p>
+                    
+                    <div class="features-container">
+                        <div class="feature">
+                            <h3>Word Integration</h3>
+                            <p>Crea e modifica documenti direttamente dall'interfaccia Artemis, rendendo il processo di scrittura più fluido e intuitivo.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Excel Data Management</h3>
+                            <p>Gestisci dati e calcoli complessi con la potenza di Excel, ottimizzando la tua produttività e precisione.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>PowerPoint Presentations</h3>
+                            <p>Genera presentazioni professionali per i tuoi progetti, assicurando che le tue idee siano comunicate in modo efficace.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
+
+    </div>
+    <div class="contentGuida">
+
+        <section id="Guida">
+            <img src="../img/artemisDesign.png" alt="Artemis Work con Microsoft Office" class="product-image" style="max-width: 200px;">
+                <div class="product-section">
+                    <h2>Artemis Design</h2>
+                    <p>Artemis integra le potenti funzionalità di Adobe Creative Suite per offrirti un'esperienza completa di gestione progettuale. <br>Ricorda che, mentre le applicazioni possono essere utilizzate liberamente, l'accesso alle funzionalità avanzate dell'IA potrebbe richiedere un investimento.</p>
+
+                    <div class="features-container">
+                        <div class="feature">
+                            <h3>Photoshop Integration</h3>
+                            <p>Crea e modifica immagini professionali direttamente dall'interfaccia Artemis, migliorando la tua creatività e produttività.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Illustrator Design</h3>
+                            <p>Progetta grafiche vettoriali e illustrazioni con la potenza di Illustrator, per risultati visivi straordinari.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>InDesign Layouts</h3>
+                            <p>Crea layout professionali e documenti impaginati per i tuoi progetti, assicurando un aspetto curato e professionale.</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+</section>
+
+</div>
+
+    <br><br>
+    <div id="footer">
+        <p>&copy; 2025 Artemis. Tutti i diritti riservati.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Termini di Servizio</a></li>
+            <li><a href="#">Social Media</a></li>
+        </ul>
+        
+    </div>
+        <!-- scripts: p5 first, poi Vanta, inizializzazione dopo DOMContentLoaded -->
+        <script src="../assets/p5.min.js"></script>
+        <script src="../assets/vanta.trunk.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof VANTA !== 'undefined' && typeof VANTA.TRUNK === 'function') {
+                VANTA.TRUNK({
+                    el: '#vanta-bg',
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 300.00,
+                    minWidth:500.00,
+                    scale: 3.00,
+                    scaleMobile: 2.00,
+                    backgroundColor: 0x000000,
+                    chaos: 3.50
+                });
+            }
+        });
+        </script>
+</body>
+</html>
